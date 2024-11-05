@@ -25,8 +25,8 @@ WHILE counter <= N:
 
 3. Kondisi Terminasi
 
-  - Loop berhenti ketika counter > N
-  - Tampilkan "Selesai"
+   - Loop berhenti ketika counter > N
+   - Tampilkan "Selesai"
 
 Flowchart algoritma:
 
@@ -67,5 +67,35 @@ Flowchart algoritma:
        -Jika angka random < 0.5: dicetak dan counter bertambah
   
 3.  Dari output yang terlihat:
+   
+    - User memasukkan N = 5
+    - Program menghasilkan 5 angka random < 0.5
+    
+          data ke: 1 => 0.22422725915012398
+      
+          data ke: 2 => 0.08143383880445236
+      
+          data ke: 3 => 0.29455614142741193
+      
+          data ke: 4 => 0.12537763804880175
+      
+          data ke: 5 => 0.46041201475820446
 
-User memasukkan N = 5
+4. Setelah mendapatkan 5 angka yang memenuhi syarat, program selesai dan mencetak "Selesai"
+
+   - Program ini mendemonstrasikan konsep:
+
+   - Perulangan dengan kondisi (while loop)
+
+   - Pengambilan keputusan (if condition)
+
+   - Pembangkitan angka random
+
+   - Pencacahan (counter)
+
+   - Format string untuk output
+
+   - Saya akan menjelaskan alur algoritma dari kode perhitungan laba tersebut
+  
+# LATIHAN 2
+
