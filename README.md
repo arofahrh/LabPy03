@@ -56,7 +56,7 @@ Flowchart algoritma:
     ↓
     End
 
-    Penjelasan Detail:
+Penjelasan Detail:
 
 1. Program meminta user memasukkan nilai N yang menentukan berapa banyak angka random < 0.5 yang diinginkan
 
@@ -98,4 +98,109 @@ Flowchart algoritma:
    - Saya akan menjelaskan alur algoritma dari kode perhitungan laba tersebut
   
 # LATIHAN 2
+
+![Screenshot 2024-11-05 144112](https://github.com/user-attachments/assets/d807aa5e-6953-40a6-b21b-98e099895e6a)
+
+1. Inisialisasi
+
+       laba_bulanan = []  # Array kosong untuk menyimpan laba per bulan
+       total_laba = 0     # Variabel untuk menyimpan total laba
+       modal_awal = 100000000  # Modal awal (tersirat dari output)
+
+2.  Proses Perhitungan Laba (Loop pertama)
+
+        FOR bulan FROM 1 TO 8:
+        1. Set laba = 0
+    
+        2. Hitung laba berdasarkan bulan:
+        IF bulan <= 2:           # Bulan 1-2
+          laba = 0
+        ELSE IF bulan <= 4:      # Bulan 3-4
+          laba = modal_awal * 1% (0.01)
+        ELSE IF bulan <= 7:      # Bulan 5-7
+          laba = modal_awal * 5% (0.05)
+        ELSE:                    # Bulan 8
+          laba = modal_awal * 2% (0.02)
+    
+        3. Simpan laba ke array laba_bulanan
+        4. Tambahkan laba ke total_laba
+
+   3. Proses Menampilkan Hasil (Loop kedua)
+  
+           FOR bulan, laba IN laba_bulanan:
+           Tampilkan "laba bulan ke-{bulan} sebesar: {laba}"
+
+           Tampilkan "Total laba adalah: {total_laba}"
+
+ Flowchart algoritma:
+
+           Start
+           ↓
+           [Inisialisasi variabel]
+           ↓
+           ┌─────────────────────┐
+           │ For bulan 1 to 8   │
+           └─────────┬───────────┘
+           ↓
+           [Set laba = 0]
+           ↓
+           [Cek kondisi bulan]
+           ↓
+           ┌─────────────────┐
+           │ Bulan 1-2: 0%   │
+           │ Bulan 3-4: 1%   │
+           │ Bulan 5-7: 5%   │
+           │ Bulan 8: 2%     │
+           └────────┬────────┘
+             ↓
+           [Hitung laba]
+           ↓
+           [Simpan ke array]
+           ↓
+           [Update total_laba]
+           ↓
+           ┌─────────────────────┐
+           │ For each laba      │
+           └─────────┬───────────┘
+           ↓
+           [Tampilkan laba per bulan]
+           ↓
+           [Tampilkan total laba]
+           ↓
+           End
+
+Output Programm
+
+    laba bulan ke- 1 sebesar: 0
+    laba bulan ke- 2 sebesar: 0
+    laba bulan ke- 3 sebesar: 1000000.0
+    laba bulan ke- 4 sebesar: 1000000.0
+    laba bulan ke- 5 sebesar: 5000000.0
+    laba bulan ke- 6 sebesar: 5000000.0
+    laba bulan ke- 7 sebesar: 5000000.0
+    laba bulan ke- 8 sebesar: 2000000.0
+    Total laba adalah: 19000000.0
+    
+Penjelasan Logika Bisnis:
+
+1. Bulan 1-2: Belum ada laba (0%)
+2. Bulan 3-4: Laba 1% dari modal
+3. Bulan 5-7: Laba meningkat jadi 5% dari modal
+4. Bulan 8: Laba turun menjadi 2% dari moda
+
+Program ini mendemonstrasikan konsep:
+
+a. Array dan operasi append
+
+b. Perulangan (for loop)
+
+c. Pengambilan keputusan berjenjang (if-elif-else)
+
+d. Perhitungan persentase
+
+e. Akumulasi nilai
+
+f. Format string untuk output
+
+# LATIHAN 3
 
