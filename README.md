@@ -27,3 +27,45 @@ WHILE counter <= N:
 
   - Loop berhenti ketika counter > N
   - Tampilkan "Selesai"
+
+Flowchart algoritma:
+
+    Start
+     ↓
+    [Input nilai N]
+    ↓
+     [Set counter = 1]
+    ↓
+    ┌─────────────────────┐
+    │ While counter <= N  │←──────┐
+    └─────────┬───────────┘       │
+          ↓                   │
+    [Generate random]         │
+          ↓                   │
+    [Cek random < 0.5]        │
+          ↓                   │
+     [Jika Ya]──→[Print data] │
+           ↓         ↓        │
+     [Jika Tidak]   [counter++]
+           │         │        │
+           └─────────┘        │
+                ↑             │
+                └─────────────┘
+          ↓
+    [Print "Selesai"]
+    ↓
+    End
+
+    Penjelasan Detail:
+
+1. Program meminta user memasukkan nilai N yang menentukan berapa banyak angka random < 0.5 yang diinginkan
+
+2. Program akan terus menghasilkan angka random sampai mendapatkan N buah angka yang nilainya < 0.5
+   
+       -Jika angka random ≥ 0.5: diabaikan dan generate angka baru
+   
+       -Jika angka random < 0.5: dicetak dan counter bertambah
+  
+3.  Dari output yang terlihat:
+
+User memasukkan N = 5
